@@ -86,3 +86,9 @@ For suggestions, collaborations, or questions:
 📧 kaifq125@gmail.com
 
 🔗 www.linkedin.com/in/kaif-qureshi-989b1b246
+
+
+--
+## 📄 License
+
+This project is licensed under the [MIT License].
