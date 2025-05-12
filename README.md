@@ -44,3 +44,45 @@ Developed by **Kaif**, **Vinit Jethwa**, and **Sachin Singh**, this project show
 ├── video_creator.py             # Frame generation and video composition
 ├── Narrative_Frames_Test_to_Video.ipynb  # Jupyter demo notebook
 ├── requirements.txt.txt         # Dependency list
+
+```
+---
+
+## 🚀 Usage
+
+### 🔹 Launch the Streamlit App
+
+```bash
+streamlit run streamlit_app.py
+```
+🏠 Home Page
+- Click on "Create Video" to open the video creation interface.
+
+🎨 Creator Interface
+- Paste your narrative/script into the text box.
+
+Adjust the following settings:
+
+- Segment Count – Number of segments the story is split into.
+
+- Inference Steps – Affects the video quality and generation time.
+
+- Audio Voice – Choose from available TTS voices.
+
+Click "Generate Video" and wait while the AI pipeline processes your input.
+
+Once done, preview the video and download your final output.
+
+🌐 Public Sharing (via ngrok)
+- After launching, ngrok will provide a public URL in the terminal.
+
+Share this link with others to showcase your app in real-time.
+
+---
+
+## 📬 Contact
+For suggestions, collaborations, or questions:
+
+📧 kaifq125@gmail.com
+
+🔗 www.linkedin.com/in/kaif-qureshi-989b1b246
