@@ -1,94 +1,97 @@
+# Narrative-Frames-Text-to-video-generation
 
-# 🎬 Narrative Frames – Text to Video Generation
 
-Narrative Frames is a creative AI-powered tool that transforms written stories into engaging, animated videos. Built using diffusion models, TTS pipelines, and Streamlit, it brings imagination to life—frame by frame.
+**🎬 Narrative Frames: Text-to-Video Storytelling**
 
-Developed by **Kaif**, **Vinit Jethwa**, and **Sachin Singh**, this project showcases the blend of storytelling, generative AI, and open-source innovation.
-
----
-
-## 🚀 Features
-
-- ✍️ **Story Preprocessing**  
-  Breaks down text into structured narrative elements using NLP techniques.
-
-- 🧠 **AI-Powered Video Generation**  
-  Converts each story element into a short animated clip using AnimateDiff and MotionAdapter.
-
-- 🔊 **Text-to-Speech Narration**  
-  Uses Coqui TTS to narrate the story, matching the visuals with human-like audio.
-
-- 🎞️ **Video Stitching & Final Output**  
-  Automatically syncs video clips and narration into a smooth, cinematic final video.
+Welcome to **Narrative Frames**, a Streamlit‑powered application that transforms your written narrative into a dynamic, animated video. Harnessing the power of AnimateDiff, MotionAdapter, and advanced audio pipelines, you can turn any text prompt into a polished video story in minutes.
 
 ---
 
-## 🧰 Tech Stack
+## 🔎 Features
 
-- Python 3.8+
-- Streamlit
-- AnimateDiff + MotionAdapter
-- Coqui TTS
-- PyTorch, OpenCV, PIL
+* **Text Preprocessing**: Clean and extract core story segments using `preprocessing.py` (pronoun stripping, NP extraction).
+* **Diffusion‑based Video Generation**: Load and run the ByteDance AnimateDiff‑Lightning pipeline to generate per‑segment video clips.
+* **Audio Synthesis**: Generate narration audio with Coqui TTS and synchronize it with video frames.
+* **Streamlit UI**: Intuitive web interface (`streamlit_app.py`) to upload scripts, preview segments, and download final MP4.
+* **Automatic Deployment**: Built‑in support for ngrok tunnels to share your local app publicly.
 
 ---
 
-## 🗂️ Project Structure
+## 📁 Repository Structure
 
 ```bash
-📁 Narrative-Frames
-├── streamlit_app.py             # Main Streamlit application
-├── preprocessing.py             # Text cleaning and segmentation
-├── model.py                     # Diffusion model pipeline and setup
-├── audio.py                     # Narration synthesis and audio processing
-├── video_creator.py             # Frame generation and video composition
-├── Narrative_Frames_Test_to_Video.ipynb  # Jupyter demo notebook
-├── requirements.txt.txt         # Dependency list
-
+├── preprocessing.py       # Text cleaning & segment extraction
+├── model.py               # Load AnimateDiff pipeline & segment renderer
+├── video_creator.py       # Core stitching logic: combine clips + audio
+├── streamlit_app.py       # Streamlit front‑end UI & navigation
+├── requirements.txt       # Pinpointed Python dependencies
+└── README.md              # This documentation
 ```
+
+---
+
+## ⚙️ Installation
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/yourusername/narrative-frames.git
+   cd narrative-frames
+   ```
+
+2. **Install dependencies**
+
+   ```bash
+   pip install -r requirements.txt
+   python -m spacy download en_core_web_sm
+   ```
+
+3. **Clone AnimateDiff‑Lightning**
+
+   ```bash
+   git clone https://huggingface.co/ByteDance/AnimateDiff-Lightning AnimateDiff-Lightning
+   ```
+
+4. **Prepare ngrok (optional)**
+
+   ```bash
+   pip install pyngrok
+   export NGROK_AUTH_TOKEN="<YOUR_NGROK_TOKEN>"
+   ```
+
 ---
 
 ## 🚀 Usage
 
-### 🔹 Launch the Streamlit App
+1. **Launch the Streamlit app**
 
-```bash
-streamlit run streamlit_app.py
-```
-🏠 Home Page
-- Click on "Create Video" to open the video creation interface.
+   ```bash
+   streamlit run streamlit_app.py
+   ```
 
-🎨 Creator Interface
-- Paste your narrative/script into the text box.
+2. **Home Page**
 
-Adjust the following settings:
+   * Click **"Create Video"** to navigate to the creator interface.
 
-- Segment Count – Number of segments the story is split into.
+3. **Creator Interface**
 
-- Inference Steps – Affects the video quality and generation time.
+   * Paste your narrative script.
+   * Adjust **segment count**, **inference steps**, and **audio voice**.
+   * Click **"Generate Video"** and wait for the pipeline to finish.
+   * Preview and **download** your final video.
 
-- Audio Voice – Choose from available TTS voices.
+4. **Public Share (ngrok)**
 
-Click "Generate Video" and wait while the AI pipeline processes your input.
-
-Once done, preview the video and download your final output.
-
-🌐 Public Sharing (via ngrok)
-- After launching, ngrok will provide a public URL in the terminal.
-
-Share this link with others to showcase your app in real-time.
+   * After launch, ngrok will output a public URL: share this link to demo your app in real‑time.
 
 ---
 
-## 📬 Contact
-For suggestions, collaborations, or questions:
+## 🛠️ Contributing
 
-📧 kaifq125@gmail.com
+Contributions, issues, and feature requests are welcome! Please open an issue or submit a pull request on GitHub.
 
-🔗 www.linkedin.com/in/kaif-qureshi-989b1b246
+---
 
-
---
 ## 📄 License
 
-This project is licensed under the [MIT License].
+This project is licensed under the [MIT License](LICENSE).

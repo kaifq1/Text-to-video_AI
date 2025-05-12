@@ -1,0 +1,12 @@
+streamlit>=1.24.0
+spacy>=3.5.0
+transformers>=4.30.0
+diffusers>=0.18.0
+torch>=2.0.0
+accelerate>=0.20.0
+coqui-tts>=0.3.0
+pyngrok>=5.2.0
+moviepy>=2.0.0
+numpy>=1.24.0
+pillow>=9.4.0
+tqdm>=4.65.0
