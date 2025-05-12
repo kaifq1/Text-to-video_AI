@@ -6,7 +6,7 @@ text-to-video generation as a final year project
 
 Narrative Frames is a creative AI-powered tool that transforms written stories into engaging, animated videos. Built using diffusion models, TTS pipelines, and Streamlit, it brings imagination to life—frame by frame.
 
-Developed by **Kaif**, **Vinit Jethwa**, and **[Teammate's Name]**, this project showcases the blend of storytelling, generative AI, and open-source innovation.
+Developed by **Kaif**, **Vinit Jethwa**, and **Sachin Singh**, this project showcases the blend of storytelling, generative AI, and open-source innovation.
 
 ---
 
