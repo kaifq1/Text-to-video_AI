@@ -5,6 +5,8 @@
 
 Welcome to **Narrative Frames**, a Streamlit‑powered application that transforms your written narrative into a dynamic, animated video. Harnessing the power of AnimateDiff, MotionAdapter, and advanced audio pipelines, you can turn any text prompt into a polished video story in minutes.
 
+Developed by **Kaif Qureshi**, **Vinit Jethwa**, and **Sachin Singh**, this project showcases the blend of storytelling, generative AI, and open-source innovation.
+
 ---
 
 ## 🔎 Features
